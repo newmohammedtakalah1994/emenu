@@ -19,6 +19,8 @@ namespace emenu.Controllers.Resources.Products
 
         public ICollection<ProductVariantRes> ProductVariants { get; set; }
 
+        public ICollection<ProductImageRes> ProductImages { get; set; }
+
     }
 }
 

@@ -19,6 +19,10 @@ namespace emenu.Mapping
             CreateMap<CreateProductDetailsRes, ProductDetails>();
 
 
+            CreateMap<CreateProductVariantImageRes, ProductVariantImage>();
+            CreateMap<ProductVariantImage, ProductVariantImageRes>();
+
+
         }
     }
 }

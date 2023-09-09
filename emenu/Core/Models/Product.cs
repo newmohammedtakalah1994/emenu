@@ -18,5 +18,7 @@ namespace emenu.Core.Models
 
         public ICollection<ProductVariant> ProductVariants { get; set; }
 
+        public ICollection<ProductImage> ProductImages { get; set; }
+
     }
 }

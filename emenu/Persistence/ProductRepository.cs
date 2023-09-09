@@ -41,7 +41,12 @@ namespace emenu.Persistence
                                     .ThenInclude(pv => pv.ProductDetails)
                                     .ThenInclude(pa => pa.VariantValue)
                              .Where(o => o.Id == id)
+                             .Include(p => p.ProductVariants)
+                                    .ThenInclude(pv => pv.ProductVariantImages)
+                                    .ThenInclude(pvi => pvi.Image)
                             .Include(c => c.Image)
+                             .Include(p => p.ProductImages)
+                                    .ThenInclude(pi => pi.Image)
                             .FirstOrDefaultAsync();
         }
 

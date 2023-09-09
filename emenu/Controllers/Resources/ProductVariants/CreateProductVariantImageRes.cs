@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace emenu.Controllers.Resources.ProductVariants
 {
-    public class CreateProductDetailsRes
+    public class CreateProductVariantImageRes
     {
-        public int VariantValueId { get; set; }
+        public int ImageId { get; set; }
     }
 }
