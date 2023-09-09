@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace emenu.Core.Models
 {
+    // this modle to declare variant value so value will value like red , blue , small
     public class VariantValue
     {
         public int Id { get; set; }

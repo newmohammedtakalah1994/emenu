@@ -13,6 +13,6 @@ namespace emenu.Controllers.Resources.VariantValues
         public string ValueEn { get; set; }
         public string ValueAr { get; set; }
 
-        public int VariantId { get; set; }
+        public int? VariantId { get; set; }
     }
 }

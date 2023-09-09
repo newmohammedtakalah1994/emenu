@@ -13,5 +13,7 @@ namespace emenu.Controllers.Resources.ProductVariants
         public int ProductId { get; set; }
 
         public ICollection<CreateProductDetailsRes> ProductDetails { get; set; }
+
+        public ICollection<CreateProductVariantImageRes> ProductVariantImages { get; set; }
     }
 }

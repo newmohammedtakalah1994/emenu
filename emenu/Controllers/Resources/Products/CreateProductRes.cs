@@ -15,5 +15,7 @@ namespace emenu.Controllers.Resources.Products
 
         public int? ImageId { get; set; }
 
+        public ICollection<CreateProductImageRes> ProductImages { get; set; }
+
     }
 }

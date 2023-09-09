@@ -9,7 +9,7 @@ namespace emenu.Controllers.Resources.ProductVariants
 {
     public class UpdateProductVariantRes
     {
-        public int ProductId { get; set; }
-        public ICollection<CreateProductDetailsRes> ProductDetails { get; set; }
+        public int? ProductId { get; set; }
+      
     }
 }

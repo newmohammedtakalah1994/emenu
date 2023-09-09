@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace emenu.Core.Models
 {
+    // this class to define variant for specfic product
     public class ProductVariant
     {
         public int Id { get; set; }

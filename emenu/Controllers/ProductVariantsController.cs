@@ -87,47 +87,11 @@ namespace emenu.Controllers
             if (ProductVariant == null)
                 return NotFound("ProductVariant is not found");
 
-           /* if(resource.CategoryId == null)
+            if(resource.ProductId == null)
             {
-                resource.CategoryId = ProductVariant.CategoryId;
+                resource.ProductId = ProductVariant.ProductId;
             }
 
-            if (resource.ImageId == null)
-            {
-                resource.ImageId = ProductVariant.ImageId;
-            }
-
-            if (resource.Image2Id == null)
-            {
-                resource.Image2Id = ProductVariant.Image2Id;
-            }
-            if (resource.Price == null)
-            {
-                resource.Price = ProductVariant.Price;
-            }
-            if (resource.Name == null)
-            {
-                resource.Name = ProductVariant.Name;
-            }
-            if (resource.NameAr == null)
-            {
-                resource.NameAr = ProductVariant.NameAr;
-            }
-
-            if (resource.Desc == null)
-            {
-                resource.Desc = ProductVariant.Desc;
-            }
-
-            if (resource.Barcode == null)
-            {
-                resource.Barcode = ProductVariant.Barcode;
-            }
-            if (resource.inStock == null)
-            {
-                resource.inStock = ProductVariant.inStock;
-            }
-           */
 
             _mapper.Map(resource, ProductVariant);
 

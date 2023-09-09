@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace emenu.Core.Models
 {
+    // this modle to declare variant attribute so name will value like color and size and matrieal
     public class Variant
     {
         public int Id { get; set; }

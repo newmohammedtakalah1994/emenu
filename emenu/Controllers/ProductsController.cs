@@ -87,47 +87,27 @@ namespace emenu.Controllers
             if (Product == null)
                 return NotFound("Product is not found");
 
-           /* if(resource.CategoryId == null)
+            if(resource.NameEn == null)
             {
-                resource.CategoryId = Product.CategoryId;
-            }
-
-            if (resource.ImageId == null)
-            {
-                resource.ImageId = Product.ImageId;
-            }
-
-            if (resource.Image2Id == null)
-            {
-                resource.Image2Id = Product.Image2Id;
-            }
-            if (resource.Price == null)
-            {
-                resource.Price = Product.Price;
-            }
-            if (resource.Name == null)
-            {
-                resource.Name = Product.Name;
+                resource.NameEn = Product.NameEn;
             }
             if (resource.NameAr == null)
             {
                 resource.NameAr = Product.NameAr;
             }
-
-            if (resource.Desc == null)
+            if (resource.DescEn == null)
             {
-                resource.Desc = Product.Desc;
+                resource.DescEn = Product.DescEn;
             }
-
-            if (resource.Barcode == null)
+            if (resource.DescAr == null)
             {
-                resource.Barcode = Product.Barcode;
+                resource.DescAr = Product.DescAr;
             }
-            if (resource.inStock == null)
+            if (resource.ImageId == null)
             {
-                resource.inStock = Product.inStock;
+                resource.ImageId = Product.ImageId;
             }
-           */
+           
 
             _mapper.Map(resource, Product);
 
@@ -135,10 +115,6 @@ namespace emenu.Controllers
 
             return Ok();
         }
-
-
-       
-    
         
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteProduct([FromRoute] int id)
